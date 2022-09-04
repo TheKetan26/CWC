@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+
+{% block meta %}
+    <title>LOG IN FORM </title>
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}" type="text/css">
+{% endblock meta %}
+
+
+{% block content %}
+         <header><h1>SIGN UP HERE</h1></header>
+      </div>
+         
+      <div class="signup">
+         <div class="userlogin">
+        <h1>Registration form</h1><br>
+         <table> 
+            <form action="/register" method="POST"> {% csrf_token %}
+              <p>First name<br>
+               <input type="text" name="first_name" placeholder="First name" required></p>
+              <br><br>
+              <p>Last name <br>
+               <input type="text" name="last_name" placeholder="Last name" required></p>
+              <br><br>
+              <p>Email<br>
+               <input type="email" name="email" placeholder="Email" required></p>
+              <br><br>
+              <p>Password <br>
+               <input type="password" name="password" placeholder="Password " required></p>
+              <br><br>
+              <p>Contact<br>
+               <input type="number" name="contact" placeholder="Mobile number" required></p>
+              <br><br>
+              <p>DOB<br>
+               <input type="date" required></p>
+
+              <br><br>
+               <fieldset>             
+               <label>Gender:</label>
+               
+                <input type="radio"  name="gender_male" id="Male">
+                <span>Male</span>
+                
+                <input type="radio" name="gender_female" id="Female">
+                <span>Female</span>
+               </fieldset> 
+                <br>
+               <label for="COUNTRY">COUNTRY</label>
+               <br>
+              <select COUNTRY="COUNTRY">
+               <option value="INDIA">--CHOOSE COUNTRY--</option>
+               <option value="INDIA">INDIA</option>
+               <option value="PAKISTAN">PAKISTAN</option>
+               <option value="China">China</option>
+               <option value="United States">United States</option>
+               <option value="Germany">Germany</option>
+               <option value="Australia">Australia</option>
+               <option value="Afganistan">Afganistan</option>
+               <option value="Bangladesh">Bangladesh</option>
+               <option value="England">England</option>
+               <option value="New Zealand">New Zealand</option>
+               <option value="South Africa">South Africa</option>
+               <option value="West Indies">West Indies</option>
+              </select>  
+              <br><br>
+              <input type="checkbox" name="term_and_condition" ><p><small> I agree to all the term and condition. <a href=""><small>terms&conditions</small></a></small> </p>
+              <br><br>
+             
+              
+              <input type="submit" id="submit" value="SIGN UP" >
+             
+              <br>
+         </form>
+         </table>
+                </div>
+      </div>  
+{% endblock content %}

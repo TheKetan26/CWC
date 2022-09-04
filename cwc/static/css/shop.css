@@ -1,0 +1,16 @@
+*{
+    padding: 1px;
+}
+
+body{
+    background-image: url(/BACKGROUND.jpeg);
+}
+#logo{
+    margin-left: 45%;
+}
+nav{
+    background-color: rgb(17, 124, 143);
+}
+#cwcfantasy1{
+    text-align: center;
+}

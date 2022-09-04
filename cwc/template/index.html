@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+
+{% block meta %}
+    <title>CRICKET WITH CHETAN</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock meta %}
+
+
+{% block content %}
+    <div class="intro_page">
+        <img src="{% static 'image/crbg.jpeg' %}" class="intro-bg">
+        <p>Cricket is not just a game, it's an emotion. ❤️</p>
+    </div>
+    <hr>
+    <div class="live_fantasy_shop">
+        <div class="live_score">
+            <a href="/live" target="_blank"><img src="{% static 'image/live.jpg' %}" alt="Live score"><figcaption id="caption_live_score">Live Score</figcaption></a>
+            </div>
+            <div class="fantasy_cricket">
+            <a href="/fantacy" target="_blank"><img src="{% static 'image/fantacy.jpg' %}" alt="Fantasy cricket"><figcaption id="caption_fantasy_cricket">Fantasy Cricket</figcaption></a>
+        </div>
+        <div class="shop">
+            <a href="/shop" target="_blank"><img src="{% static 'image/shop.jpg' %}" alt="Purchase shop"><figcaption id="caption_shop">Buy Equipment</figcaption></a>
+        </div>
+    </div>
+    <hr>
+    <div class="youtube_news">
+        <div class="yt_section">
+        <div class="yt_section1">
+                <table>
+                    <div class="youtube_videos">
+                    <th colspan="3">Youtube</th>
+                        <tr><td>
+                            <iframe  src="https://www.youtube.com/embed/VloejW9wfU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </td>
+                        <td>
+                            <iframe src="https://www.youtube.com/embed/AKIgGOstCvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </td>
+                        </tr>
+                </div>
+                <tr class="join_button"><td colspan="5"><a href="https://www.youtube.com/channel/UCqtVMByhwCRY7Td1Jc2xODQ"><img id="join_button" src="/images/join button.png" alt=""></a></td></tr>             
+                </table>
+            </div>
+            <div class="yt_section2">   
+                    <table>
+                            <div class="youtube_videos">
+                            <th colspan="2">YouTube</th>
+                                <tr><td>
+                                    <iframe  src="https://www.youtube.com/embed/VloejW9wfU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </td></tr>
+                                <tr><td>
+                                    <iframe src="https://www.youtube.com/embed/AKIgGOstCvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </td></tr>
+                            </div>
+                                <td><tr class="join_button"><td colspan="5"><a href="https://www.youtube.com/channel/UCqtVMByhwCRY7Td1Jc2xODQ"><img id="join_button" src="/images/join button.png" alt=""></a></td></tr>             
+                        </table>
+                </div>
+                </div>
+        <hr>
+            <div class="trending_news">
+                <table id="trending_news_table">
+                    <th colspan="10">World trending</th>
+                    <tr><td>
+                            <iframe id="cric_news" width="500" height="670" src="https://rss.app/embed/v1/list/tQnI7ss1wZSYERdX" frameborder="0"></iframe>
+                    </td></tr>   
+                </table>
+            </div>
+    </div>  
+    <hr>
+{% endblock content %}

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(/images/BACKGROUND.jpeg);
+    background-size: 280%;
+    background-position: -400px 0px;
+}
+div.signup{
+    width: 400px;
+    
+    margin: 100px auto 0px auto;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+div.userlogin{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 2px 2px 15px
+     rgba(0,0,0,0.3);
+     color: #fff;
+}
+form#userlogin{
+    margin: 40px;
+}
+label{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+
+}
+input#submit{
+   background-color: chocolate;
+   width: 100%;
+   padding: 10px;
+}
+input#reset{
+    background-color: chocolate;
+   width: 150px;
+   height: 25px;
+   padding-right: 20px;
+}
+div.header{
+    background-color: rgba(206, 162, 162, 0.468);
+}
+fieldset{
+    border: none;
+}
+input{
+    padding: 2px;
+    
+}

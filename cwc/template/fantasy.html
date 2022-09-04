@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+{% block meta %}
+    <title>Fantasy Cricket</title>
+    <link rel="stylesheet" href="/CSS/fantasy_cricket.css">
+{% endblock meta %}
+
+
+{% block content %}
+<div class="matches_container">
+    <div class="live_upcoming_results_button">
+        <ul class="container-button-list" role="tablist">
+            <li role="presentation" class="live-match-container active button-list">
+                <a id="live-contest-tab" role="tab" href="#" ><span class="live-indicator"></span>Live</a>
+            </li>
+                <li role="presentation" class="upcoming-match-container ">
+                <a id="upcoming-contest-tab" role="tab" href="#">Upcoming</a>
+            </li>
+                <li role="presentation" class="completed-match-container "  >
+                <a href="#" role="tab" id="completed-contest-tab">Completed</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock content %}

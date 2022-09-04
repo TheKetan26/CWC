@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+
+{% block meta %}
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="{% static 'css/signin.css' %}">
+{% endblock meta %}
+
+
+{% block content %}
+     <div class="signin">
+        <div class="userlogin">
+       <h3 id="log_in123">LOG IN</h3>
+       <hr><br>
+        <table> 
+           <form action="/signin" method="POST"> {% csrf_token %}
+              <label for="Email">Email </label>
+              <br>
+              <input type="text" name="email" placeholder="email id">
+              <br><br>    
+              <label for="Password">Password </label>
+              <br>
+              <input type="password" name="password" placeholder="password">
+              <br><br>
+              <input type="submit" class="submit1" value="Sign in " >
+            <br>
+            <p>Do not have account? <a class="sign_up"  href="/signup">SIGN UP</a> </p>
+              </div>
+         </form> 
+      </div>
+    
+{% endblock content %}

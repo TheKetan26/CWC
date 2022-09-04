@@ -1,0 +1,184 @@
+
+.intro_page{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 30vw;
+    margin: 3vw;
+    border-radius: 5vw;
+}
+.intro_page p{
+    text-align: left;
+    font-size: 2vw;
+    color: white;
+    margin-left: 5vw;
+}
+.intro-bg {
+    width: 100%;
+    z-index: -1;
+}
+
+
+.live_fantasy_shop{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    
+}
+
+.live_fantasy_shop img{
+    height: 15vw ;
+    width: 100%;
+    border-radius: 1vw;
+    margin: 1vw;
+    
+}
+.live_score{
+    padding: 2vw;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+    
+}
+.fantasy_cricket{
+    padding: 2vw;
+    text-align: center;
+    width: 30%;
+}
+.shop{
+    
+    padding: 2vw;
+    text-align: center;
+    width: 30%;
+}
+.live_fantasy_shop figcaption{
+    font-size: 2vw;
+    color: black;
+    margin-left: 3vw;
+}
+.live_fantasy_shop figcaption:hover{
+    border-radius: 5vw;
+    color: white;
+    background-color: rgb(170, 26, 26);
+}
+
+.youtube_news{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    width: 100%;
+}
+.yt_section th{
+    border: solid;
+    border-radius: 2vw;
+    background-color: rgb(118, 213, 213);
+}
+.yt_section iframe{
+    border: solid;
+    padding: 1vw;
+    border-radius: 1vw;
+    height: 20vw;
+    width: 40vw;
+}
+#join_button {
+    width: 10vw; 
+}
+.yt_section2{
+    display: none;
+}
+.trending_news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%    
+}
+.trending_news th{
+    border: solid;
+    border-radius: 1vw;
+    background-color: rgb(139, 227, 227);
+}
+.trending_news iframe{
+    width: 80vw;
+    height: 40vw;
+}
+
+@media only screen and (max-width: 465px) {
+    .intro_page{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        height: 50vw;
+        margin-top: 20vw;
+        border-radius: 5vw;
+        
+    }
+    .intro_page p{
+        margin-bottom: auto;
+        margin-top: 8vh;
+    }
+    .live_fantasy_shop{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50vh;
+        
+    }
+    .live_fantasy_shop img{
+        height: 40vw ;
+        width: 50vh;
+        border-radius: 1vw;
+                
+    }
+    .live_score{
+        
+        text-align: center;
+        width: 20%;
+        height: 100%;
+        margin: 5vh;
+        padding: 0;
+        
+    }
+    .fantasy_cricket{
+    
+        text-align: center;
+        width: 20%;
+        margin: 5vh;
+        padding: 0;
+    }
+    .shop{
+        
+        padding: 2vw;
+        text-align: center;
+        width: 20%;
+        padding: 0;
+        margin: 5vh;
+        
+    }
+    .live_fantasy_shop{
+        text-align: center;
+    }
+    .yt_section1{
+        display: none;
+    }
+    .yt_section2{
+        display: contents;
+        
+        
+    }
+    .yt_section2 td iframe{
+        width: 50vh;
+        height: 30vh;
+    }
+    .trending_news table{
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        width: 50vh;
+        margin-bottom: 100vh;
+    }
+}
