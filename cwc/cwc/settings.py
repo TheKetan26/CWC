@@ -40,6 +40,9 @@ INSTALLED_APPS = [
 
     'page',
     'users',
+    'home',
+    'live',
+    'record'
 ]
 
 MIDDLEWARE = [

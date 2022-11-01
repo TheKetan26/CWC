@@ -15,26 +15,38 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from page.views import home, live, fantacy, shop, about
+from page.views import fantacy, shop, about
+
+from home.views import home
 
 from login.views import login
 
 from users.views import new_user, register
 
+from live.views import show
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # Home page
     path('', home, name='home'),
     path('index', home, name='home'),
+    path('home', home, name='home'),
+
     path('fantacy', fantacy, name='fantacy'),
-    path('live', live, name='live'),
+
+    # Live score page
+    path('live', show, name='live'),
+
     path('shop', shop, name='shop'),
+
     path('about', about, name='about'),
 
-    #Login page
+    # Login page
     path('signin', login, name='signin'),
 
-    #New user registration pages
+    # New user registration pages
     path('signup', new_user, name='signup'),
     path('register', register, name='about')
 ]

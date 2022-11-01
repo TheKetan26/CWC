@@ -1,14 +1,15 @@
 from django.db import models
-from datetime import date
 
 
 class User(models.Model):
+    user_id                  = models.IntegerField(default=0)
+
     first_name          = models.CharField(max_length=25, default="")
     last_name           = models.CharField(max_length=25, default="")
 
     email               = models.EmailField(default="")
 
-    password            =models.CharField(max_length=16, default="12345678")
+    password            = models.CharField(max_length=16, default="12345678")
 
     contact             = models.PositiveBigIntegerField(blank=True)
 
@@ -21,3 +22,5 @@ class User(models.Model):
     nation              = models.CharField(max_length=12, default="INDIA", choices=nation_choices)
 
 
+    def __str__(self):
+        return str(self.id) + " - " + str(self.email)

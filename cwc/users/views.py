@@ -1,8 +1,6 @@
 from django.shortcuts import render
-from re import match
 
-
-from users.models import User
+from .models import User
 
 
 def new_user(request):
